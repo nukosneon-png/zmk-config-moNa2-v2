@@ -176,7 +176,7 @@ combos:
 - p: [17, 18]
   k: '&mkp MB1'
 - p: [19, 18]
-  k: TAB
+  k: '&mkp MB2'
 - p: [29, 30]
   k: DOWN
 - p: [6, 7]
