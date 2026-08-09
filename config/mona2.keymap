@@ -44,42 +44,6 @@
         };
     };
 
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        scroll_up_down: mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-        };
-
-        scroll_right_left: mouse_wheel_right_left {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-
-            tap-ms = <20>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,7 +55,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &lt 3 SPACE  &lt 2 LANG1    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&none>;
         };
 
         layer_1 {
@@ -102,7 +66,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans                                                  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&none>;
         };
 
         layer_2 {
@@ -113,7 +77,7 @@
 &trans  &trans  &trans  &trans  &trans              &trans           &trans  &trans                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_3 {
@@ -124,7 +88,7 @@
 &trans       &trans             &trans           &trans            &trans          &trans             &kp COMMA  &kp PERIOD                                                                &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&none>;
         };
     };
 };
