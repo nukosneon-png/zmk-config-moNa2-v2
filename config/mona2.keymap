@@ -55,7 +55,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &lt 3 SPACE  &lt 2 LANG1    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
         };
 
         layer_1 {
@@ -66,7 +66,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans                                                  &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         layer_2 {
@@ -88,7 +88,7 @@
 &trans       &trans             &trans           &trans            &trans          &trans             &kp COMMA  &kp PERIOD                                                                &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
     };
 };
