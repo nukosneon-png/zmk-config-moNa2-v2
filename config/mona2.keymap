@@ -54,6 +54,17 @@
         };
     };
 
+    behaviors {
+        scroll_up_down: mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -65,23 +76,23 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &lt 3 SPACE   &lt 2 LANG1    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
             bindings = <
-&none   &none   &none   &none   &none                        &kp LS(MINUS)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
-&trans  &trans  &none   &none   &trans            &kp SEMI   &kp COLON      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans                                                   &trans
+&none   &none   &none   &none   &none                        &kp LS(MINUS)         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
+&trans  &trans  &none   &none   &trans            &kp COLON  &kp LS(SINGLE_QUOTE)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp SLASH             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
             bindings = <
-&none   &none   &none   &none   &kp LC(COLON)                                &none   &none  &none  &none  &none
+&none   &none   &none   &none   &kp LC(EQUAL)                                &none   &none  &none  &none  &none
 &none   &none   &none   &none   &kp LC(MINUS)                        &trans  &none   &none  &none  &none  &none
 &none   &none   &none   &none   &kp LG(LEFT_ARROW)  &kp LG(RIGHT)    &none   &none   &none  &none  &none  &none
 &trans  &trans  &trans  &trans  &trans              &trans           &trans  &trans                       &trans
@@ -92,13 +103,13 @@
 
         layer_3 {
             bindings = <
-&trans    &kp LS(N2)  &kp MINUS        &kp GREATER_THAN  &kp LESS_THAN                                 &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
-&kp LBKT  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION      &kp UNDERSCORE                     &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans    &kp RC(A)   &kp LC(C)        &kp LC(V)         &trans          &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
-&trans    &trans      &trans           &trans            &trans          &trans             &kp COMMA  &kp PERIOD                                                   &trans
+&trans    &kp LS(N2)  &kp MINUS        &kp GREATER_THAN  &kp LESS_THAN                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
+&kp LBKT  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION      &kp LS(INT1)                      &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans    &kp RC(A)   &kp LC(C)        &kp LC(V)         &trans         &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
+&trans    &trans      &trans           &trans            &trans         &trans             &kp COMMA  &kp PERIOD                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
