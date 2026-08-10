@@ -93,7 +93,7 @@
 &trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans                                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
