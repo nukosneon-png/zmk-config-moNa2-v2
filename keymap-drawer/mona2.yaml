@@ -59,8 +59,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ;
   - ':'
+  - Sft+'
   - '4'
   - '5'
   - '6'
@@ -91,7 +91,7 @@ layers:
   - ''
   - ''
   - ''
-  - 'Ctl+:'
+  - Ctl+=
   - ''
   - ''
   - ''
@@ -144,7 +144,7 @@ layers:
   - Sft+6
   - '!'
   - '?'
-  - _
+  - Sft+INT1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ARROW
