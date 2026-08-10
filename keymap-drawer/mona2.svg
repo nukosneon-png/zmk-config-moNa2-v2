@@ -330,7 +330,7 @@ path.combo {
 <path d="M476,140 l-43,43" class="combo"/>
 <path d="M476,140 l43,-43" class="combo"/>
 <rect rx="6" ry="6" x="462" y="127" width="28" height="26" class="combo"/>
-<text x="476" y="140" class="combo tap">Z</text>
+<text x="476" y="140" class="combo tap">Ctl+Z</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
@@ -532,7 +532,7 @@ path.combo {
 <path d="M476,140 l-43,43" class="combo"/>
 <path d="M476,140 l43,-43" class="combo"/>
 <rect rx="6" ry="6" x="462" y="127" width="28" height="26" class="combo"/>
-<text x="476" y="140" class="combo tap">Z</text>
+<text x="476" y="140" class="combo tap">Ctl+Z</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
@@ -714,7 +714,7 @@ path.combo {
 <path d="M476,140 l-43,43" class="combo"/>
 <path d="M476,140 l43,-43" class="combo"/>
 <rect rx="6" ry="6" x="462" y="127" width="28" height="26" class="combo"/>
-<text x="476" y="140" class="combo tap">Z</text>
+<text x="476" y="140" class="combo tap">Ctl+Z</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
@@ -929,7 +929,7 @@ path.combo {
 <path d="M476,140 l-43,43" class="combo"/>
 <path d="M476,140 l43,-43" class="combo"/>
 <rect rx="6" ry="6" x="462" y="127" width="28" height="26" class="combo"/>
-<text x="476" y="140" class="combo tap">Z</text>
+<text x="476" y="140" class="combo tap">Ctl+Z</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
