@@ -44,7 +44,7 @@
         };
 
         ctrlz {
-            bindings = <&kp Z>;
+            bindings = <&kp LC(Z)>;
             key-positions = <39 17>;
         };
 
