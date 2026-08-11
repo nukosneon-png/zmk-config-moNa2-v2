@@ -66,6 +66,7 @@
             label = "SCROLL_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -74,6 +75,7 @@
             label = "SCROLL_RIGHT_LEFT";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
             tap-ms = <20>;
         };
     };
@@ -83,9 +85,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp SQT                                    &kp T  &kp Y  &kp U  &kp I  &kp P
+&kp Q             &kp W         &kp E         &kp R      &kp LBKT                                   &kp T  &kp Y  &kp U  &kp I  &kp P
 &kp A             &kp S         &kp D         &kp F      &kp MINUS                   &kp ESCAPE     &kp G  &kp H  &kp J  &kp K  &kp O
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &none        &kp TAB        &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp SQT      &kp TAB        &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &lt 3 SPACE  &lt 2 LANG1    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
@@ -116,10 +118,10 @@
 
         layer_3 {
             bindings = <
-&trans    &kp LS(N2)  &kp MINUS        &kp GREATER_THAN  &kp LESS_THAN                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
-&kp LBKT  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION      &kp LS(INT1)                      &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans    &kp RC(A)   &kp LC(C)        &kp LC(V)         &trans         &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
-&trans    &trans      &trans           &trans            &trans         &trans             &kp COMMA  &kp PERIOD                                                   &trans
+&trans     &kp LS(N2)  &kp MINUS        &kp GREATER_THAN  &kp LESS_THAN                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
+&kp LC(A)  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION      &kp LS(INT1)                      &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans     &kp RC(A)   &kp LC(C)        &kp LC(V)         &trans         &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
+&trans     &trans      &trans           &trans            &trans         &trans             &kp COMMA  &kp PERIOD                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
