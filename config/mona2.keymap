@@ -124,7 +124,7 @@
 &trans     &trans      &trans           &trans            &trans         &trans             &kp COMMA  &kp PERIOD                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         layer_4 {
