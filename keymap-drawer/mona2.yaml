@@ -152,7 +152,7 @@ layers:
   - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+A
+  - ''
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
@@ -316,3 +316,13 @@ combos:
   k: Sft+Ctl+L
 - p: [38, 39]
   k: '4'
+- p: [32, 31]
+  k: AltGr+ENTER
+- p: [16, 17]
+  k: LEFT
+- p: [19, 20]
+  k: RIGHT
+- p: [3, 2]
+  k: Alt+1
+- p: [23, 24]
+  k: Alt+2
