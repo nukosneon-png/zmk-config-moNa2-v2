@@ -54,8 +54,8 @@
             key-positions = <12 13>;
         };
 
-        layer4_bt {
-            bindings = <&mo 4>;
+        escape {
+            bindings = <&kp ESCAPE>;
             key-positions = <38 39>;
         };
 
