@@ -58,6 +58,31 @@
             bindings = <&mo 4>;
             key-positions = <38 39>;
         };
+
+        altenter {
+            bindings = <&kp RA(ENTER)>;
+            key-positions = <32 31>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <16 17>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <19 20>;
+        };
+
+        zoominExsl {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <3 2>;
+        };
+
+        zoomoutExsl {
+            bindings = <&kp LA(NUMBER_2)>;
+            key-positions = <23 24>;
+        };
     };
 
     behaviors {
@@ -120,7 +145,7 @@
             bindings = <
 &trans     &kp LS(N2)  &kp MINUS        &kp GREATER_THAN  &kp LESS_THAN                                &trans      &kp HOME        &kp UP_ARROW    &kp END          &trans
 &kp LC(A)  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION      &kp LS(INT1)                      &trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans     &kp RC(A)   &kp LC(C)        &kp LC(V)         &trans         &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
+&trans     &none       &kp LC(C)        &kp LC(V)         &trans         &kp PRINTSCREEN    &trans     &trans      &kp LS(N8)      &kp LS(N9)      &none            &trans
 &trans     &trans      &trans           &trans            &trans         &trans             &kp COMMA  &kp PERIOD                                                   &trans
             >;
 
