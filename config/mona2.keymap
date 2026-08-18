@@ -92,7 +92,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-            tap-ms = <100>;
+            tap-ms = <40>;
         };
 
         scroll_right_left: mouse_wheel_right_left {
@@ -101,7 +101,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
-            tap-ms = <100>;
+            tap-ms = <40>;
         };
     };
 
