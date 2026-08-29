@@ -11,13 +11,15 @@
 #define SCROLL 6
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     quick-tap-ms = <0>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
     quick-tap-ms = <300>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
+    tapping-term-ms = <175>;
 };
 
 / {
@@ -59,29 +61,16 @@
             key-positions = <38 39>;
         };
 
-        altenter {
-            bindings = <&kp RA(ENTER)>;
-            key-positions = <32 31>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <16 17>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <19 20>;
-        };
-
         zoominExsl {
             bindings = <&kp LA(NUMBER_1)>;
             key-positions = <3 2>;
+            require-prior-idle-ms = <150>;
         };
 
         zoomoutExsl {
             bindings = <&kp LA(NUMBER_2)>;
             key-positions = <23 24>;
+            require-prior-idle-ms = <150>;
         };
     };
 
