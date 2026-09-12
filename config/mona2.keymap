@@ -23,20 +23,6 @@
 };
 
 / {
-    macros {
-        lang2_exit: lang2_exit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG2 &to 0>;
-        };
-
-        lang1_exit: lang1_exit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG1 &to 0>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -72,28 +58,14 @@
             require-prior-idle-ms = <150>;
         };
 
-        combo_lang2_l {
-            bindings = <&lang2_exit>;
-            key-positions = <13 12>;
-            layers = <5>;
-        };
-
-        combo_lang1_r {
-            bindings = <&lang1_exit>;
-            key-positions = <18 17>;
-            layers = <5>;
-        };
-
-        combo_lang2_default {
+        combo_lang2 {
             bindings = <&kp LANG2>;
             key-positions = <13 12>;
-            layers = <0>;
         };
 
-        combo_lang1_default {
+        combo_lang1 {
             bindings = <&kp LANG1>;
             key-positions = <18 17>;
-            layers = <0>;
         };
     };
 
@@ -177,10 +149,10 @@
 
         MOUSE {
             bindings = <
-&to 0   &to 0  &to 0   &to 0  &to 0                  &to 0  &to 0     &to 0     &to 0  &to 0
-&to 0   &to 0  &to 0   &to 0  &to 0           &to 0  &to 0  &mkp MB1  &mkp MB2  &to 0  &mo 6
-&to 0   &to 0  &to 0   &to 0  &to 0  &to 0    &to 0  &to 0  &to 0     &to 0     &to 0  &to 0
-&trans  &to 0  &trans  &to 0  &to 0  &to 0    &to 0  &to 0                             &to 0
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &trans  &mo 6
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
