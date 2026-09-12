@@ -249,9 +249,9 @@ layers:
   - {t: default, h: toggle}
   - {t: default, h: toggle}
   - {t: default, h: toggle}
+  - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
   - {t: default, h: toggle}
   - {t: default, h: toggle}
   - {t: default, h: toggle}
@@ -320,3 +320,9 @@ combos:
 - p: [18, 17]
   k: '&lang1_exit'
   l: ['5']
+- p: [13, 12]
+  k: LANG2
+  l: [default]
+- p: [18, 17]
+  k: LANG1
+  l: [default]
