@@ -23,6 +23,19 @@
 };
 
 / {
+    macros {
+        lang2_exit: lang2_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2>, <&to 0>;
+        };
+        lang1_exit: lang1_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&to 0>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -71,6 +84,30 @@
             bindings = <&kp LA(NUMBER_2)>;
             key-positions = <23 24>;
             require-prior-idle-ms = <150>;
+        };
+
+        combo_lang2_l {
+            bindings = <&lang2_exit>;
+            key-positions = <13 12>;
+            layers = <5>;
+        };
+
+        combo_lang1_l {
+            bindings = <&lang1_exit>;
+            key-positions = <12 11>;
+            layers = <5>;
+        };
+
+        combo_lang2_r {
+            bindings = <&lang2_exit>;
+            key-positions = <17 18>;
+            layers = <5>;
+        };
+
+        combo_lang1_r {
+            bindings = <&lang1_exit>;
+            key-positions = <18 19>;
+            layers = <5>;
         };
     };
 
@@ -154,10 +191,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+&to 0   &to 0     &to 0     &to 0     &to 0                       &to 0   &to 0     &to 0     &to 0     &to 0
+&to 0   &mkp MB3  &mkp MB2  &mkp MB1  &to 0             &to 0     &to 0   &mkp MB1  &mkp MB2  &mkp MB3  &to 0
+&to 0   &to 0     &to 0     &to 0     &to 0   &to 0     &to 0     &to 0   &to 0     &to 0     &to 0     &to 0
+&to 0   &to 0     &to 0     &to 0     &to 0   &to 0     &to 0     &to 0                                 &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
