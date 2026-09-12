@@ -23,6 +23,14 @@
 };
 
 / {
+    macros {
+        lang1_exit: lang1_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &to 0>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -66,6 +74,13 @@
         combo_lang1 {
             bindings = <&kp LANG1>;
             key-positions = <18 17>;
+            layers = <0>;
+        };
+
+        combo_lang1_mouse {
+            bindings = <&lang1_exit>;
+            key-positions = <18 17>;
+            layers = <5>;
         };
     };
 
