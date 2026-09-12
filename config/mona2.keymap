@@ -83,6 +83,18 @@
             key-positions = <18 17>;
             layers = <5>;
         };
+
+        combo_lang2_default {
+            bindings = <&kp LANG2>;
+            key-positions = <13 12>;
+            layers = <0>;
+        };
+
+        combo_lang1_default {
+            bindings = <&kp LANG1>;
+            key-positions = <18 17>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -165,10 +177,10 @@
 
         MOUSE {
             bindings = <
-&to 0  &to 0  &to 0  &to 0  &to 0                  &to 0  &to 0     &to 0     &to 0  &to 0
-&to 0  &to 0  &to 0  &to 0  &to 0           &to 0  &to 0  &mkp MB1  &mkp MB2  &to 0  &mo 6
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0    &to 0  &to 0  &to 0     &to 0     &to 0  &to 0
-&to 0  &to 0  &to 0  &to 0  &to 0  &to 0    &to 0  &to 0                             &to 0
+&to 0   &to 0  &to 0   &to 0  &to 0                  &to 0  &to 0     &to 0     &to 0  &to 0
+&to 0   &to 0  &to 0   &to 0  &to 0           &to 0  &to 0  &mkp MB1  &mkp MB2  &to 0  &mo 6
+&to 0   &to 0  &to 0   &to 0  &to 0  &to 0    &to 0  &to 0  &to 0     &to 0     &to 0  &to 0
+&trans  &to 0  &trans  &to 0  &to 0  &to 0    &to 0  &to 0                             &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
