@@ -318,3 +318,7 @@ combos:
   k: LANG2
 - p: [18, 17]
   k: LANG1
+  l: [default]
+- p: [18, 17]
+  k: '&lang1_exit'
+  l: ['5']
