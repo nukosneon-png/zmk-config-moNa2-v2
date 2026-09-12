@@ -216,48 +216,48 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
   '5':
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
   - '6'
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   '6':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,14 +315,6 @@ combos:
 - p: [23, 24]
   k: Alt+2
 - p: [13, 12]
-  k: '&lang2_exit'
-  l: ['5']
-- p: [18, 17]
-  k: '&lang1_exit'
-  l: ['5']
-- p: [13, 12]
   k: LANG2
-  l: [default]
 - p: [18, 17]
   k: LANG1
-  l: [default]
