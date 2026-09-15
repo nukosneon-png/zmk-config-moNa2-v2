@@ -26,7 +26,7 @@ layers:
   - X
   - C
   - V
-  - ':'
+  - ''''
   - TAB
   - DELETE
   - B
@@ -152,7 +152,7 @@ layers:
   - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ':'
+  - ''''
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
