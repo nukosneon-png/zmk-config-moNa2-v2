@@ -108,7 +108,7 @@
             bindings = <
 &kp Q      &kp W   &kp E         &kp R                 &kp LBKT                                    &kp T  &kp Y  &kp U  &kp I  &kp P
 &kp A      &kp S   &kp D         &kp F                 &kp MINUS                    &kp LEFT_WIN   &kp G  &kp H  &kp J  &kp K  &kp O
-&kp Z      &kp X   &kp C         &kp V                 &kp COLON    &kp TAB         &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
+&kp Z      &kp X   &kp C         &kp V                 &kp SQT      &kp TAB         &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
 &kp LCTRL  &trans  &kp LEFT_ALT  &mt LEFT_SHIFT COMMA  &lt 3 SPACE  &lt 2 PERIOD    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
@@ -141,7 +141,7 @@
             bindings = <
 &trans     &kp LS(N2)  &kp SQT          &kp LC(LS(V))  &kp LESS_THAN                                &trans            &trans          &kp UP_ARROW    &trans           &trans
 &kp LC(A)  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION   &kp LS(INT1)                      &trans     &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans     &kp COLON   &kp LC(C)        &kp LC(V)      &trans         &kp PRINTSCREEN    &trans     &trans            &kp LS(N8)      &kp LS(N9)      &trans           &trans
+&trans     &kp SQT     &kp LC(C)        &kp LC(V)      &trans         &kp PRINTSCREEN    &trans     &trans            &kp LS(N8)      &kp LS(N9)      &trans           &trans
 &trans     &trans      &trans           &trans         &trans         &trans             &kp MINUS  &kp GREATER_THAN                                                   &trans
             >;
 
