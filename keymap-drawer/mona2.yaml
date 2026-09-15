@@ -26,7 +26,7 @@ layers:
   - X
   - C
   - V
-  - {t: ▽, type: trans}
+  - ':'
   - TAB
   - DELETE
   - B
@@ -87,39 +87,39 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   '2':
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - 'Ctl+:'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+2
+  - Ctl+Sft+L
+  - Alt+1
   - Ctl+-
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,7 +152,7 @@ layers:
   - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - ':'
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
@@ -310,10 +310,6 @@ combos:
   k: Ctl+Z
 - p: [38, 39]
   k: ESCAPE
-- p: [3, 2]
-  k: Alt+1
-- p: [23, 24]
-  k: Alt+2
 - p: [13, 12]
   k: LANG2
 - p: [18, 17]
