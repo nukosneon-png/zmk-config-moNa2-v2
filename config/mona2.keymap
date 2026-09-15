@@ -102,6 +102,14 @@
 
             tap-ms = <40>;
         };
+
+        ctrl_zoom: ctrl_zoom {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "CTRL_ZOOM";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(MINUS)>, <&kp LC(EQUAL)>;
+            tap-ms = <40>;
+        };
     };
 
     keymap {
@@ -115,7 +123,7 @@
 &kp LCTRL  &trans  &kp LEFT_ALT  &mt LEFT_SHIFT COMMA  &lt 3 SPACE  &lt 2 PERIOD    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&ctrl_zoom>;
         };
 
         layer_1 {
