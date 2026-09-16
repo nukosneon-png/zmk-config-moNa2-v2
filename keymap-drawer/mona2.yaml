@@ -155,7 +155,7 @@ layers:
   - ''''
   - Ctl+C
   - Ctl+V
-  - {t: ▽, type: trans}
+  - ''''
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
