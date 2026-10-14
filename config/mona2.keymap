@@ -106,9 +106,9 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W   &kp E         &kp R                 &kp LBKT                                    &kp T  &kp Y  &kp U  &kp I  &kp P
+&kp Q      &kp W   &kp E         &kp R                 &kp AT_SIGN                                 &kp T  &kp Y  &kp U  &kp I  &kp P
 &kp A      &kp S   &kp D         &kp F                 &kp MINUS                    &kp LEFT_WIN   &kp G  &kp H  &kp J  &kp K  &kp O
-&kp Z      &kp X   &kp C         &kp V                 &kp SQT      &kp TAB         &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
+&kp Z      &kp X   &kp C         &kp V                 &kp COLON    &kp TAB         &kp DELETE     &kp B  &kp N  &kp M  &kp L  &kp RSHFT
 &kp LCTRL  &trans  &kp LEFT_ALT  &mt LEFT_SHIFT COMMA  &lt 3 SPACE  &lt 2 PERIOD    &kp BACKSPACE  &mo 1                       &kp ENTER
             >;
 
@@ -117,10 +117,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp LS(MINUS)         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
-&trans  &trans  &trans  &trans  &trans            &kp COLON  &kp LS(SINGLE_QUOTE)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp SLASH             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans                                                          &trans
+&trans  &trans  &trans  &trans  &trans                          &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
+&trans  &trans  &trans  &trans  &trans            &kp KP_PLUS   &kp ASTRK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS  &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -128,7 +128,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans         &trans            &kp LC(COLON)                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans            &kp LC(PLUS)                     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(NUMBER_2)  &kp LC(LS(L))  &kp LA(NUMBER_1)  &kp LC(MINUS)            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans         &trans            &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans         &trans            &trans         &trans    &trans  &trans                          &trans
@@ -139,10 +139,10 @@
 
         layer_3 {
             bindings = <
-&trans     &kp LS(N2)  &kp SQT          &kp LC(LS(V))  &kp LESS_THAN                                &trans            &trans          &kp UP_ARROW    &trans           &trans
-&kp LC(A)  &kp LS(N6)  &kp EXCLAMATION  &kp QUESTION   &kp LS(INT1)                      &trans     &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans     &kp SQT     &kp LC(C)        &kp LC(V)      &kp SQT        &kp PRINTSCREEN    &trans     &trans            &kp LS(N8)      &kp LS(N9)      &trans           &trans
-&trans     &trans      &trans           &trans         &trans         &trans             &kp MINUS  &kp GREATER_THAN                                                   &trans
+&trans     &kp DOUBLE_QUOTES  &kp SQT          &kp LC(LS(V))  &trans                                &trans            &trans                &trans                 &trans  &trans
+&kp LC(A)  &kp AMPERSAND      &kp EXCLAMATION  &kp QUESTION   &trans                     &trans     &trans            &kp LEFT_ARROW        &kp RIGHT              &trans  &trans
+&trans     &trans             &kp LC(C)        &kp LC(V)      &trans  &kp PRINTSCREEN    &trans     &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans     &trans             &trans           &trans         &trans  &trans             &kp MINUS  &kp GREATER_THAN                                                       &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
