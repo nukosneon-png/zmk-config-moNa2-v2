@@ -101,7 +101,7 @@ layers:
   - Alt+2
   - Ctl+Sft+L
   - Alt+1
-  - Ctl+-
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,6 +315,3 @@ combos:
 - p: [18, 17]
   k: LANG1
   l: [default]
-- p: [18, 17]
-  k: '&lang1_exit'
-  l: ['5']
