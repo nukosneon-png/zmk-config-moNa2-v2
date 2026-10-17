@@ -64,12 +64,6 @@
             key-positions = <18 17>;
             layers = <0>;
         };
-
-        combo_lang1_mouse {
-            bindings = <&lang1_exit>;
-            key-positions = <18 17>;
-            layers = <5>;
-        };
     };
 
     behaviors {
@@ -128,10 +122,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans         &trans            &kp LC(PLUS)                     &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(NUMBER_2)  &kp LC(LS(L))  &kp LA(NUMBER_1)  &kp LC(MINUS)            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans         &trans            &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans         &trans            &trans         &trans    &trans  &trans                          &trans
+&trans  &trans            &trans         &trans            &kp LC(PLUS)                    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(NUMBER_2)  &kp LC(LS(L))  &kp LA(NUMBER_1)  &kp UNDER               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans         &trans            &trans        &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
