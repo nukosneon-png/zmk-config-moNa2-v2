@@ -58,12 +58,14 @@
             bindings = <&kp LANG2>;
             key-positions = <13 12>;
             layers = <0 5>;
+            timeout-ms = <100>;
         };
 
         combo_lang1 {
             bindings = <&kp LANG1>;
             key-positions = <18 17>;
             layers = <0 5>;
+            timeout-ms = <100>;
         };
     };
 
