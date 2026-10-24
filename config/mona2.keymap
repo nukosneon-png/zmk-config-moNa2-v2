@@ -24,10 +24,20 @@
 
 / {
     macros {
-        lang1_exit: lang1_exit {
+        kana_exit_aml: kana_exit_aml {
             compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp LANG1 &to 0>;
+            bindings = <&kp LANG1 &tog_off MOUSE>;
+        };
+
+        eisu_exit_aml: eisu_exit_aml {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &tog_off MOUSE>;
         };
     };
 
@@ -55,14 +65,14 @@
         };
 
         combo_lang2 {
-            bindings = <&kp LANG2>;
+            bindings = <&eisu_exit_aml>;
             key-positions = <13 12>;
             layers = <0 5>;
             timeout-ms = <100>;
         };
 
         combo_lang1 {
-            bindings = <&kp LANG1>;
+            bindings = <&kana_exit_aml>;
             key-positions = <18 17>;
             layers = <0 5>;
             timeout-ms = <100>;
@@ -70,6 +80,12 @@
     };
 
     behaviors {
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            toggle-mode = "off";
+        };
+
         scroll_up_down: mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLL_UP_DOWN";
