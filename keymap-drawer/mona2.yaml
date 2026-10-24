@@ -311,7 +311,7 @@ combos:
 - p: [38, 39]
   k: ESCAPE
 - p: [13, 12]
-  k: LANG2
+  k: '&lang2_exit'
 - p: [18, 17]
-  k: LANG1
+  k: '&lang1_exit'
   l: [default]
