@@ -29,6 +29,12 @@
             #binding-cells = <0>;
             bindings = <&kp LANG1 &to 0>;
         };
+
+        lang2_exit: lang2_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &to 0>;
+        };
     };
 
     combos {
@@ -55,12 +61,12 @@
         };
 
         combo_lang2 {
-            bindings = <&kp LANG2>;
+            bindings = <&lang2_exit>;
             key-positions = <13 12>;
         };
 
         combo_lang1 {
-            bindings = <&kp LANG1>;
+            bindings = <&lang1_exit>;
             key-positions = <18 17>;
             layers = <0>;
         };
