@@ -101,7 +101,7 @@ layers:
   - Alt+2
   - Ctl+Sft+L
   - Alt+1
-  - Sft+-
+  - Ctl+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,7 +152,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
